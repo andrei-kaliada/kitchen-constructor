@@ -1,0 +1,15 @@
+.imagesBlock{
+  margin-top: 50px;
+  min-height: 1000px;
+
+  &_wrapper{
+    img{
+      width: 100%;
+      cursor: pointer;
+    }
+
+    &__box{
+      margin-top: 10px;
+    }
+  }
+}
