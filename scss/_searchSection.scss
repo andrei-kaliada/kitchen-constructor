@@ -1,0 +1,37 @@
+.search{
+
+  margin: 20px 0;
+
+  &_wrapper{
+
+    &__label{
+      color: #000;
+      padding-left: 0;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 7px;
+      margin-top: 7px;
+    }
+
+    &__box{
+      input{
+        display: block;
+        border: 1px solid #bababa;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0 15px;
+        height: 54px;
+        font-size: 17px;
+        font-weight: 400;
+        color: #000;
+        width: 100%;
+
+        &:focus {
+          outline:none;
+      }
+      }
+    }
+  }
+
+}

@@ -124,6 +124,166 @@ const abstraction = [
     id:1204,
     link:"images/abstraction/image1204.jpg"
   },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
+  {
+    id:1207,
+    link:"images/abstraction/image1207.jpg"
+  },
+  {
+    id:1206,
+    link:"images/abstraction/image1206.jpg"
+  },
+  {
+    id:1205,
+    link:"images/abstraction/image1205.jpg"
+  },
+  {
+    id:1204,
+    link:"images/abstraction/image1204.jpg"
+  },
 ];
 
 const cities = [
@@ -201,10 +361,130 @@ const nature = [
     id:5172,
     link:"images/natura/image5172.jpg"
   },
+
+ 
+];
+
+const sea = [
+  {
+    id:6039,
+    link:"images/sea/image6039.jpg",
+  },
+  {
+    id:6073,
+    link:"images/sea/image6073.jpg",
+  },
+  {
+    id:6083,
+    link:"images/sea/image6083.jpg",
+  },
+  {
+    id:6093,
+    link:"images/sea/image6093.jpg",
+  },
+];
+
+const bridges = [
+  {
+    id:7043,
+    link:"images/bridges/image7043.jpg",
+  },
+  {
+    id:7053,
+    link:"images/bridges/image7053.jpg",
+  },
+  {
+    id:7063,
+    link:"images/bridges/image7063.jpg",
+  },
+  {
+    id:7073,
+    link:"images/bridges/image7073.jpg",
+  },
+];
+
+const texture = [
+  {
+    id:8191,
+    link:"images/texture/image8191.jpg",
+  },
+  {
+    id:8192,
+    link:"images/texture/image8192.jpg",
+  },
+  {
+    id:8193,
+    link:"images/texture/image8193.jpg",
+  },
+  {
+    id:8197,
+    link:"images/texture/image8197.jpg",
+  },
+];
+
+const patterns = [
+  {
+    id:9030,
+    link:"images/patterns/image9030.jpg",
+  },
+  {
+    id:9103,
+    link:"images/patterns/image9103.jpg",
+  },
+  {
+    id:9113,
+    link:"images/patterns/image9113.jpg",
+  },
+  {
+    id:9123,
+    link:"images/patterns/image9123.jpg",
+  },
+];
+
+const berryAndFruit = [
+  {
+    id:1803,
+    link:"images/berryAndFruit/image1803.jpg",
+  },
+  {
+    id:1813,
+    link:"images/berryAndFruit/image1813.jpg",
+  },
+  {
+    id:1983,
+    link:"images/berryAndFruit/image1983.jpg",
+  },
+  {
+    id:1993,
+    link:"images/berryAndFruit/image1993.jpg",
+  },
 ];
 
 
-let allImagesArr = [...abstraction, ...cities, ...flowers, ...eatsAndDrinks, ...nature];
+const plain = [
+  {
+    id:3001,
+    link:"images/plain/image3001.jpg",
+  },
+  {
+    id:3005,
+    link:"images/plain/image3005.jpg",
+  },
+  {
+    id:3015,
+    link:"images/plain/image3015.jpg",
+  },
+  {
+    id:9003,
+    link:"images/plain/image9003.jpg",
+  },
+];
+
+
+
+
+
+let allImagesArr = [...abstraction, ...cities, ...flowers, ...eatsAndDrinks, ...nature, ...sea, ...bridges, ...texture, ...patterns, ...berryAndFruit, ...plain];
 
 
 const imagesBlock = document.querySelector(".imagesBlock_wrapper");
@@ -215,6 +495,7 @@ const citiesBtn = document.querySelector(".cities");
 const flowersBtn = document.querySelector(".flowers");
 const eatsAndDrinksBtn = document.querySelector(".eatsAndDrinks");
 const natureBtn = document.querySelector(".nature");
+const searchInput = document.querySelector("#searchInput");
 let listImages;
 
 
@@ -238,14 +519,21 @@ function showAllImages(allImagesArr){
         behavior: "smooth"
     });
   let link = listImages[i].src;
-  middleElement.style.background = `url("${link}")`;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+
   });
   }
+
+
 }
 
 
 
 function addBackImage(dataArr){
+  
   imagesBlock.innerHTML = "";
   dataArr.map((el)=>{
     let div = document.createElement("div");
@@ -264,6 +552,9 @@ function addBackImage(dataArr){
 allImagesBtn.addEventListener('click', function(e){
   e.preventDefault();
   showAllImages(allImagesArr);
+  displayList(allImagesArr, null, rows, 1);
+  setupPagination(allImagesArr, null, rows);
+
 } );
 
 
@@ -285,9 +576,15 @@ abstractionBtn.addEventListener('click', function(e){
     });
       
   let link = listImages[i].src;
-  middleElement.style.background = `url("${link}")`;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
   });
   }
+
+  displayList(abstraction, null, rows, 1);
+  setupPagination(abstraction, null, rows);
 
 
 });
@@ -312,10 +609,16 @@ citiesBtn.addEventListener('click', function(e){
     });
       
   let link = listImages[i].src;
-  middleElement.style.background = `url("${link}")`;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+ 
   });
   }
 
+  displayList(cities, null, rows, 1);
+  setupPagination(cities, null, rows);
 
 });
 
@@ -339,9 +642,15 @@ flowersBtn.addEventListener('click', function(e){
     });
       
   let link = listImages[i].src;
-  middleElement.style.background = `url("${link}")`;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
   });
   }
+
+  displayList(flowers, null, rows, 1);
+setupPagination(flowers, null, rows);
 
 
 });
@@ -366,9 +675,15 @@ eatsAndDrinksBtn.addEventListener('click', function(e){
     });
       
   let link = listImages[i].src;
-  middleElement.style.background = `url("${link}")`;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
   });
   }
+
+  displayList(eatsAndDrinks, null, rows, 1);
+setupPagination(eatsAndDrinks, null, rows);
 
 
 });
@@ -393,14 +708,355 @@ natureBtn.addEventListener('click', function(e){
     });
       
   let link = listImages[i].src;
-  middleElement.style.background = `url("${link}")`;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
   });
   }
+
+  displayList(nature, null, rows, 1);
+setupPagination(nature, null, rows);
 
 
 });
 
 
 
+//----------------- Sea --------------------------------
+
+const seaBtn = document.querySelector(".sea");
+
+seaBtn.addEventListener('click', function(e){
+  e.preventDefault();
+ 
+  addBackImage(sea);
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+
+  displayList(sea, null, rows, 1);
+setupPagination(sea, null, rows);
 
 
+});
+
+
+//----------------- Bridges --------------------------------
+
+
+const bridgesBtn = document.querySelector(".bridges");
+
+bridgesBtn.addEventListener('click', function(e){
+  e.preventDefault();
+ 
+  addBackImage(bridges);
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+
+  displayList(bridges, null, rows, 1);
+setupPagination(bridges, null, rows);
+
+
+});
+
+
+//----------------- Texture --------------------------------
+
+const textureBtn = document.querySelector(".texture");
+
+textureBtn.addEventListener('click', function(e){
+  e.preventDefault();
+ 
+  addBackImage(texture);
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+
+  displayList(texture, null, rows, 1);
+setupPagination(texture, null, rows);
+
+
+});
+
+
+//----------------- Patterns --------------------------------
+
+const patternsBtn = document.querySelector(".patterns");
+
+patternsBtn.addEventListener('click', function(e){
+  e.preventDefault();
+ 
+  addBackImage(patterns);
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+
+  displayList(patterns, null, rows, 1);
+setupPagination(patterns, null, rows);
+
+
+});
+
+
+//----------------- BerryAndFruit --------------------------------
+
+const berryAndFruitBtn = document.querySelector(".berryAndFruit");
+
+berryAndFruitBtn.addEventListener('click', function(e){
+  e.preventDefault();
+ 
+  addBackImage(berryAndFruit);
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+
+  displayList(berryAndFruit, null, rows, 1);
+setupPagination(berryAndFruit, null, rows);
+
+
+});
+
+
+//----------------- Plain --------------------------------
+
+const plainBtn = document.querySelector(".plain");
+
+plainBtn.addEventListener('click', function(e){
+  e.preventDefault();
+ 
+  addBackImage(plain);
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+
+  displayList(plain, null, rows, 1);
+setupPagination(plain, null, rows);
+
+
+});
+
+
+
+//------------------ Search Input ------------------------
+
+
+
+searchInput.addEventListener('input', function(e){
+  // paginationElement.innerHTML ="";
+  if(e.target.value == ""){
+    
+    showAllImages(allImagesArr);
+   
+  }else{
+
+    let searchArr = [];
+    allImagesArr.forEach(el => {
+     
+      let strId = el.id + "";
+
+      if(strId.search(e.target.value) != -1){
+        searchArr.push(el)
+        
+      }
+      addBackImage(searchArr);
+    })
+   
+  
+   
+    listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+     
+   
+    for(let i = 0; i < listImages.length; i++){
+     
+      listImages[i].addEventListener('click',()=>{
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+        
+    let link = listImages[i].src;
+    middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+    });
+    }
+  }
+  
+
+});
+
+
+// ---------------------- Pagination -------------------------
+
+const paginationElement = document.querySelector("#pagination");
+
+let currentPage = 1;
+let rows = 30;
+
+function displayList(items, wrapper, rows_per_page, page){
+  
+  page--;
+
+  let start = rows_per_page * page;
+  let end = start + rows_per_page;
+  let paginatedItems = items.slice(start, end);
+  console.log(paginatedItems);
+
+  // for(let i = loop_start; i < loop_start + rows_per_page; i++){
+
+  // }
+
+  addBackImage(paginatedItems);
+
+  listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+  
+
+  for(let i = 0; i < listImages.length; i++){
+   
+    listImages[i].addEventListener('click',()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+      
+  let link = listImages[i].src;
+  middleElement.style.backgroundImage = `url("${link}")`;
+  middleElement.style.backgroundSize = `cover`;
+  middleElement.style.backgroundRepeat = `no-repeat`;
+  middleElement.style.backgroundPosition = `center center`;
+  });
+  }
+}
+
+function setupPagination(items, wrapper, rows_per_page){
+  paginationElement.innerHTML ="";
+
+  let page_count = Math.ceil(items.length/ rows_per_page);
+
+  for(let i = 1; i < page_count + 1; i++){
+   let btnPagination = paginationButton(i, items);
+   paginationElement.appendChild(btnPagination);
+
+  }
+}
+
+function paginationButton(page, items){
+
+  let button = document.createElement("button");
+  button.classList.add("paginationBtn")
+  button.innerText = page;
+
+  if( currentPage == page ){
+    button.classList.add("activePaginationBtn");
+  }
+
+
+
+  button.addEventListener("click", function(){
+    current_page = page;
+    displayList(items, null, rows, current_page);
+
+    let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    current_btn.classList.remove("activePaginationBtn");
+
+    button.classList.add("activePaginationBtn");
+  });
+
+  return button;
+}
+
+displayList(allImagesArr, null, rows, 1);
+setupPagination(allImagesArr, null, rows);

@@ -1,6 +1,7 @@
-.constructor {
+#constructor {
   z-index: 1;
   position: relative;
+  margin-top: 50px;
 }
 
 .kitchen {
@@ -8,6 +9,7 @@
   max-width: 100%;
   height: auto;
   z-index: 10;
+ 
 }
 
 #sk-color-top {
@@ -146,7 +148,7 @@
 #constructor .middle {
   position: absolute;
   right: 6%;
-  left: 6%;
+  left: 0%;
   bottom: 44%;
   height: 24%;
   background: #fff;
