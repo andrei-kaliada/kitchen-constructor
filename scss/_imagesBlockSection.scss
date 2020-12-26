@@ -53,3 +53,25 @@
   
 }
 
+.btn-info{
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #2dcc70;
+  cursor: pointer;
+  transition: 0.3s all;
+  &:active, &:focus {
+    outline: none!important;
+  }
+
+  &:hover{
+    background-color: #2dcc70;
+  border-color: #2dcc70;
+  color:#fff;
+}
+}
+

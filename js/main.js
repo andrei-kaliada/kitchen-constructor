@@ -124,166 +124,8 @@ const abstraction = [
     id:1204,
     link:"images/abstraction/image1204.jpg"
   },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
-  {
-    id:1207,
-    link:"images/abstraction/image1207.jpg"
-  },
-  {
-    id:1206,
-    link:"images/abstraction/image1206.jpg"
-  },
-  {
-    id:1205,
-    link:"images/abstraction/image1205.jpg"
-  },
-  {
-    id:1204,
-    link:"images/abstraction/image1204.jpg"
-  },
+ 
+
 ];
 
 const cities = [
@@ -552,8 +394,9 @@ function addBackImage(dataArr){
 allImagesBtn.addEventListener('click', function(e){
   e.preventDefault();
   showAllImages(allImagesArr);
-  displayList(allImagesArr, null, rows, 1);
-  setupPagination(allImagesArr, null, rows);
+  buildPagination();
+  // displayList(allImagesArr, null, rows, 1);
+  // setupPagination(allImagesArr, null, rows);
 
 } );
 
@@ -583,9 +426,9 @@ abstractionBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(abstraction, null, rows, 1);
-  setupPagination(abstraction, null, rows);
-
+  // displayList(abstraction, null, rows, 1);
+  // setupPagination(abstraction, null, rows);
+  buildPaginationForAbstraction();
 
 });
 
@@ -617,8 +460,10 @@ citiesBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(cities, null, rows, 1);
-  setupPagination(cities, null, rows);
+  // displayList(cities, null, rows, 1);
+  // setupPagination(cities, null, rows);
+
+  buildPaginationForCities();
 
 });
 
@@ -649,10 +494,10 @@ flowersBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(flowers, null, rows, 1);
-setupPagination(flowers, null, rows);
+//   displayList(flowers, null, rows, 1);
+// setupPagination(flowers, null, rows);
 
-
+buildPaginationForFlowers();
 });
 
 //----------------- eatsAndDrinksBtn --------------------------------
@@ -682,9 +527,10 @@ eatsAndDrinksBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(eatsAndDrinks, null, rows, 1);
-setupPagination(eatsAndDrinks, null, rows);
+//   displayList(eatsAndDrinks, null, rows, 1);
+// setupPagination(eatsAndDrinks, null, rows);
 
+buildPaginationForEatsAndDrinks();
 
 });
 
@@ -715,8 +561,10 @@ natureBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(nature, null, rows, 1);
-setupPagination(nature, null, rows);
+//   displayList(nature, null, rows, 1);
+// setupPagination(nature, null, rows);
+
+buildPaginationForNature();
 
 
 });
@@ -750,9 +598,10 @@ seaBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(sea, null, rows, 1);
-setupPagination(sea, null, rows);
+//   displayList(sea, null, rows, 1);
+// setupPagination(sea, null, rows);
 
+buildPaginationForSea();
 
 });
 
@@ -785,10 +634,10 @@ bridgesBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(bridges, null, rows, 1);
-setupPagination(bridges, null, rows);
+//   displayList(bridges, null, rows, 1);
+// setupPagination(bridges, null, rows);
 
-
+buildPaginationForBridges();
 });
 
 
@@ -819,9 +668,10 @@ textureBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(texture, null, rows, 1);
-setupPagination(texture, null, rows);
+//   displayList(texture, null, rows, 1);
+// setupPagination(texture, null, rows);
 
+buildPaginationForTexture();
 
 });
 
@@ -853,8 +703,11 @@ patternsBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(patterns, null, rows, 1);
-setupPagination(patterns, null, rows);
+//   displayList(patterns, null, rows, 1);
+// setupPagination(patterns, null, rows);
+
+
+buildPaginationForPatterns();
 
 
 });
@@ -887,9 +740,10 @@ berryAndFruitBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(berryAndFruit, null, rows, 1);
-setupPagination(berryAndFruit, null, rows);
+//   displayList(berryAndFruit, null, rows, 1);
+// setupPagination(berryAndFruit, null, rows);
 
+buildPaginationForBerryAndFruit();
 
 });
 
@@ -921,8 +775,10 @@ plainBtn.addEventListener('click', function(e){
   });
   }
 
-  displayList(plain, null, rows, 1);
-setupPagination(plain, null, rows);
+//   displayList(plain, null, rows, 1);
+// setupPagination(plain, null, rows);
+
+buildPaginationForPlain();
 
 
 });
@@ -931,30 +787,32 @@ setupPagination(plain, null, rows);
 
 //------------------ Search Input ------------------------
 
-
+let searchArr = [];
 
 searchInput.addEventListener('input', function(e){
   // paginationElement.innerHTML ="";
   if(e.target.value == ""){
     
     showAllImages(allImagesArr);
-   
+    buildPagination();
   }else{
 
-    let searchArr = [];
+    searchArr.splice(0, searchArr.length)
     allImagesArr.forEach(el => {
      
       let strId = el.id + "";
 
-      if(strId.search(e.target.value) != -1){
+      if(strId.search(e.target.value) !== -1){
+
         searchArr.push(el)
         
       }
       addBackImage(searchArr);
+    
     })
    
   
-   
+    buildPaginationForSearch();
     listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
      
    
@@ -1025,8 +883,9 @@ function setupPagination(items, wrapper, rows_per_page){
   paginationElement.innerHTML ="";
 
   let page_count = Math.ceil(items.length/ rows_per_page);
-
+ 
   for(let i = 1; i < page_count + 1; i++){
+   
    let btnPagination = paginationButton(i, items);
    paginationElement.appendChild(btnPagination);
 
@@ -1058,5 +917,1431 @@ function paginationButton(page, items){
   return button;
 }
 
-displayList(allImagesArr, null, rows, 1);
-setupPagination(allImagesArr, null, rows);
+// displayList(allImagesArr, null, rows, 1);
+// setupPagination(allImagesArr, null, rows);
+
+
+
+// $('#pagination-container').pagination({
+//   dataSource:allImagesArr,
+//   callback: function(data, pagination) {
+//       // template method of yourself
+//       var html = template(data);
+//       $('#data-container').html(html);
+//   }
+// })
+
+// $('#pagination-container').pagination({
+//   dataSource: allImagesArr,
+//   pageSize: 30,
+//   showPrevious: true,
+//   showNext: true,
+//   callback: function(plain, pagination) {
+//       // template method of yourself
+//       var html = template(plain);
+//       $('#data-container').html(html);
+//   }
+// })
+
+
+
+let state = {
+  'querySet': allImagesArr,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+
+
+
+
+buildPagination();
+
+function pagination(querySet, page, rows) {
+
+  let trimStart = (page - 1) * rows
+  let trimEnd = trimStart + rows
+
+  let trimmedData = querySet.slice(trimStart, trimEnd)
+
+  let pages = Math.round(querySet.length / rows);
+
+  return {
+      'querySet': trimmedData,
+      'pages': pages,
+  }
+}
+
+function pageButtons(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (state.page - Math.floor(state.window / 2))
+let maxRight = (state.page + Math.floor(state.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = state.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (state.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPagination()
+  })
+
+}
+
+
+function buildPagination() {
+
+
+  let data = pagination(state.querySet, state.page, state.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtons(data.pages)
+}
+
+
+
+
+//-------------------------- Pagination Abstraction ----------------------
+
+
+let stateForAbstraction = {
+  'querySet': abstraction,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForAbstraction(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (state.page - Math.floor(state.window / 2))
+let maxRight = (state.page + Math.floor(state.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = state.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (state.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForAbstraction()
+  })
+
+}
+
+
+function buildPaginationForAbstraction() {
+
+
+  let data = pagination(stateForAbstraction.querySet, stateForAbstraction.page, stateForAbstraction.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForAbstraction(data.pages)
+}
+
+
+
+
+
+
+//-------------------------- Pagination Cities ----------------------
+
+
+let stateForCities = {
+  'querySet': cities,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForCities(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForCities.page - Math.floor(stateForCities.window / 2))
+let maxRight = (stateForCities.page + Math.floor(stateForCities.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForCities.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForCities.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForCities()
+  })
+
+}
+
+
+function buildPaginationForCities() {
+
+
+  let data = pagination(stateForCities.querySet, stateForCities.page, stateForCities.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForCities(data.pages)
+}
+
+
+//-------------------------- Pagination Flowers ----------------------
+
+
+let stateForFlowers = {
+  'querySet': flowers,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForFlowers(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForFlowers()
+  })
+
+}
+
+
+function buildPaginationForFlowers() {
+
+
+  let data = pagination(stateForFlowers.querySet, stateForFlowers.page, stateForFlowers.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForFlowers(data.pages)
+}
+
+
+
+
+
+
+
+
+//-------------------------- Pagination EatsAndDrinks ----------------------
+
+
+let stateForEatsAndDrinks = {
+  'querySet': eatsAndDrinks,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForEatsAndDrinks(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForEatsAndDrinks()
+  })
+
+}
+
+
+function buildPaginationForEatsAndDrinks() {
+
+
+  let data = pagination(stateForEatsAndDrinks.querySet, stateForEatsAndDrinks.page, stateForEatsAndDrinks.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForEatsAndDrinks(data.pages)
+}
+
+
+
+
+
+
+//-------------------------- Pagination Nature ----------------------
+
+
+let stateForNature = {
+  'querySet': nature,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForNature(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForNature()
+  })
+
+}
+
+
+function buildPaginationForNature() {
+
+
+  let data = pagination(stateForNature.querySet, stateForNature.page, stateForNature.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForNature(data.pages)
+}
+
+
+
+
+
+
+
+
+//-------------------------- Pagination Sea ----------------------
+
+
+
+let stateForSea = {
+  'querySet': sea,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForSea(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForSea()
+  })
+
+}
+
+
+function buildPaginationForSea() {
+
+
+  let data = pagination(stateForSea.querySet, stateForSea.page, stateForSea.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForSea(data.pages)
+}
+
+
+
+
+
+
+//-------------------------- Pagination Bridges ----------------------
+
+
+
+let stateForBridges = {
+  'querySet': bridges,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForBridges(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForBridges()
+  })
+
+}
+
+
+function buildPaginationForBridges() {
+
+
+  let data = pagination(stateForBridges.querySet, stateForBridges.page, stateForBridges.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForBridges(data.pages)
+}
+
+
+
+
+
+
+
+
+
+//-------------------------- Pagination Texture ----------------------
+
+
+
+let stateForTexture = {
+  'querySet': texture,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForTexture(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForTexture()
+  })
+
+}
+
+
+function buildPaginationForTexture() {
+
+
+  let data = pagination(stateForTexture.querySet, stateForTexture.page, stateForTexture.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForTexture(data.pages)
+}
+
+
+
+
+
+
+
+//-------------------------- Pagination Patterns ----------------------
+
+
+
+let stateForPatterns = {
+  'querySet': patterns,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForPatterns(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForPatterns()
+  })
+
+}
+
+
+function buildPaginationForPatterns() {
+
+
+  let data = pagination(stateForPatterns.querySet, stateForPatterns.page, stateForPatterns.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForPatterns(data.pages)
+}
+
+
+
+
+
+//-------------------------- Pagination BerryAndFruit ----------------------
+
+
+
+let stateForBerryAndFruit = {
+  'querySet': berryAndFruit,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForBerryAndFruit(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForBerryAndFruit()
+  })
+
+}
+
+
+function buildPaginationForBerryAndFruit() {
+
+
+  let data = pagination(stateForBerryAndFruit.querySet, stateForBerryAndFruit.page, stateForBerryAndFruit.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForBerryAndFruit(data.pages)
+}
+
+
+
+
+
+
+
+
+//-------------------------- Pagination BerryAndFruit ----------------------
+
+
+
+let stateForPlain = {
+  'querySet': plain,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForBerryAndPlain(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForFlowers.page - Math.floor(stateForFlowers.window / 2))
+let maxRight = (stateForFlowers.page + Math.floor(stateForFlowers.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForFlowers.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForFlowers.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForPlain()
+  })
+
+}
+
+
+function buildPaginationForPlain() {
+
+
+  let data = pagination(stateForPlain.querySet, stateForPlain.page, stateForPlain.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForBerryAndPlain(data.pages)
+}
+
+
+
+
+//-------------------------- Pagination Search ----------------------
+
+
+
+let stateForSearch = {
+  'querySet': searchArr,
+
+  'page': 1,
+  'rows': 15,
+  'window': 9,
+}
+
+
+function pageButtonsForSearch(pages) {
+  let wrapper = document.getElementById('pagination')
+
+  wrapper.innerHTML = "";
+// console.log('Pages:', pages)
+
+let maxLeft = (stateForSearch.page - Math.floor(stateForSearch.window / 2))
+let maxRight = (stateForSearch.page + Math.floor(stateForSearch.window / 2))
+
+  if (maxLeft < 1) {
+      maxLeft = 1
+      maxRight = stateForSearch.window
+  }
+
+  if (maxRight > pages) {
+      maxLeft = pages - (stateForSearch.window - 1)
+      
+      if (maxLeft < 1){
+        maxLeft = 1
+      }
+      maxRight = pages
+  }
+  
+
+  for (let page = maxLeft; page <= maxRight; page++) {
+    wrapper.innerHTML += `<button value=${page} class=" paginationBtn page btn btn-sm btn-info">${page}</button>`
+    
+  }
+
+  if (state.page != 1) {
+      wrapper.innerHTML = `<button value=${1} class="  paginationBtn page btn btn-sm btn-info">&#171; Первая</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages) {
+      wrapper.innerHTML += `<button value=${pages} class="paginationBtn page btn btn-sm btn-info">Последняя &#187;</button>`
+  }
+
+  $('.page').on('click', function() {
+
+    // current_page = state.page;
+    
+
+    // let current_btn = document.querySelector("#pagination .activePaginationBtn");
+    // current_btn.classList.remove("activePaginationBtn");
+    this.classList.add('activePaginationBtn')
+   
+  
+
+      state.page = Number($(this).val())
+    
+      buildPaginationForSearch()
+  })
+
+}
+
+
+function buildPaginationForSearch() {
+
+
+  let data = pagination(stateForSearch.querySet, stateForSearch.page, stateForSearch.rows)
+  let myList = data.querySet
+
+  for (var i = 1 in myList) {
+      //Keep in mind we are using "Template Litterals to create rows"
+          addBackImage(myList);
+
+      listImages = document.querySelectorAll(".imagesBlock_wrapper__box > img");
+      
+
+      for(let i = 0; i < listImages.length; i++){
+      
+        listImages[i].addEventListener('click',()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+          
+      let link = listImages[i].src;
+      middleElement.style.backgroundImage = `url("${link}")`;
+      middleElement.style.backgroundSize = `cover`;
+      middleElement.style.backgroundRepeat = `no-repeat`;
+      middleElement.style.backgroundPosition = `center center`;
+      });
+    }
+  }
+
+  pageButtonsForSearch(data.pages)
+}
+
+
